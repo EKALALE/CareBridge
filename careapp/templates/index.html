@@ -1,4 +1,4 @@
- {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,8 +9,8 @@
   <title>Index - Medilab Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
- 
-
+  {%load static%}
+  
   <!-- Favicons -->
   <link href="{% static 'assets/img/favicon.png'%}" rel="icon">
   <link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
@@ -110,7 +110,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="{%static 'assets/img/hero-bg.jpg'%}" alt="" data-aos="fade-in">
 
       <div class="container position-relative">
 
@@ -178,7 +178,7 @@
         <div class="row gy-4 gx-5">
 
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="{% static ' assets/img/about.jpg'%}" class="img-fluid" alt="">
             <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
           </div>
 
@@ -458,7 +458,7 @@
                     <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
+                    <img src="{%static 'assets/img/departments-1.jpg'%}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -470,7 +470,7 @@
                     <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
+                    <img src="{% static 'assets/img/departments-2.jpg'%}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -482,7 +482,7 @@
                     <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
+                    <img src="{%static 'assets/img/departments-3.jpg'%}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -494,7 +494,7 @@
                     <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
+                    <img src="{%static 'assets/img/departments-4.jpg'%}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -506,7 +506,7 @@
                     <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
+                    <img src="{%static 'assets/img/departments-5.jpg'%}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -533,7 +533,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="{%static 'assets/img/doctors/doctors-1.jpg'%}" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Walter White</h4>
                 <span>Chief Medical Officer</span>
@@ -550,7 +550,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="{%static 'assets/img/doctors/doctors-2.jpg'%}" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Sarah Jhonson</h4>
                 <span>Anesthesiologist</span>
@@ -567,7 +567,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="{%static 'assets/img/doctors/doctors-3.jpg'%}" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>William Anderson</h4>
                 <span>Cardiology</span>
@@ -584,7 +584,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="{%static 'assets/img/doctors/doctors-4.jpg'%}" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Amanda Jepson</h4>
                 <span>Neurosurgeon</span>
@@ -718,7 +718,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img flex-shrink-0" alt="">
+                      <img src="{%static 'assets/img/testimonials/testimonials-1.jpg'%}" class="testimonial-img flex-shrink-0" alt="">
                       <div>
                         <h3>Saul Goodman</h3>
                         <h4>Ceo &amp; Founder</h4>
@@ -738,7 +738,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img flex-shrink-0" alt="">
+                      <img src="{%static 'assets/img/testimonials/testimonials-2.jpg'%}" class="testimonial-img flex-shrink-0" alt="">
                       <div>
                         <h3>Sara Wilsson</h3>
                         <h4>Designer</h4>
@@ -778,7 +778,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img flex-shrink-0" alt="">
+                      <img src="{%static 'assets/img/testimonials/testimonials-4.jpg'%}" class="testimonial-img flex-shrink-0" alt="">
                       <div>
                         <h3>Matt Brandon</h3>
                         <h4>Freelancer</h4>
@@ -798,7 +798,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial-item">
                     <div class="d-flex">
-                      <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img flex-shrink-0" alt="">
+                      <img src="{%static 'assets/img/testimonials/testimonials-5.jpg'%}" class="testimonial-img flex-shrink-0" alt="">
                       <div>
                         <h3>John Larson</h3>
                         <h4>Entrepreneur</h4>
