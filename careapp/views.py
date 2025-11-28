@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
+from  careapp.models import  *
 
 # Create your views here.
 def index(request):
@@ -15,4 +16,16 @@ def about(request):
 
 
 def appoint(request):
-    return render(request,'appointment.html')
+    if request.method == "POST":
+        myappointment = Appointment(
+            name = request.POST['name'],
+            email = request.POST['email'],
+            phone = request.POST['phone'],
+            datetime = request.POST['date'],
+            department = request.POST['doctor'],
+            message = request.POST['message'],
+        )
+        myappointment.save()
+        return redirect('/appointment')
+    else:
+        return render(request, 'appointment.html')
