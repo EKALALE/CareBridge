@@ -14,5 +14,5 @@ def about(request):
     return render(request,'about.html')
 
 
-def apoint(request):
-    return render(request,'apoint.html')
+def appoint(request):
+    return render(request,'appointment.html')
