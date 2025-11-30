@@ -4,6 +4,12 @@
 {% block title %}Appointment - CareBridge{% endblock %}
 
 {% block content %}
+
+{% for message in messages %}
+
+<p class = "alert alert-success">{{ message}}</p>
+{% endfor %}
+
 <section id="appointment" class="appointment section">
   <div class="container section-title" data-aos="fade-up">
     <h2>Appointment</h2>
@@ -11,7 +17,7 @@
   </div>
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <form action="{% url 'appointment' %}" method="post" >
+    <form  method="post" >
       {% csrf_token %}
       <div class="row">
         <div class="col-md-4 form-group">
